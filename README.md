@@ -13,11 +13,11 @@ The procedure to zip, split, join and unzip these files is:
 
 ### Compressing and cutting the database
 ```
-tar -cvjf binance_0.1.2017-2020.tar.bz2 binance_0.1.db
+tar -cvjf binance_0.1.2017-2021.tar.bz2 binance_0.1.db
 
-split -b 45M binance_0.1.2017-2020.tar.bz2 "binance_0.1.2017-2020.tar.bz2.part"
+split -b 45M binance_0.1.2017-2021.tar.bz2 "binance_0.1.2017-2021.tar.bz2.part"
 
-rm binance_0.1.2017-2020.tar.bz2
+rm binance_0.1.2017-2021.tar.bz2
 
 
 ls -alh
@@ -26,7 +26,7 @@ ls -alh
 ### Joining the split files
 
 ```
-cat binance_0.1.2017_2020.tar.bz2.part* > binance_0.1.2017_2020.tar.bz2
+cat binance_0.1.2017_2021.tar.bz2.part* > binance_0.1.2017_2021.tar.bz2
 
-tar -xjf binance_0.1.2017_2020.tar.bz2
+tar -xjf binance_0.1.2017_2021.tar.bz2
 ```
